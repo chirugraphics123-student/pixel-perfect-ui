@@ -4,10 +4,10 @@
 
 **URL**: https://neat-front-style.lovable.app/
 
-##🚀 Project Overview
+## 🚀 Project Overview
 MarketPulse is a cutting-edge stock market analysis and prediction tool designed to provide retail investors with clear, actionable insights tailored to their specific risk tolerance. We move beyond simple "buy/sell" signals by combining dynamic, real-time data visualization with a sophisticated Large Language Model (LLM) to deliver personalized recommendations.
 
-##✨ Features
+## ✨ Features
 
 Custom Stock Selection: Users can input any standard stock ticker (e.g., GOOGL, TSLA, MSFT) to instantly pull relevant market data.Dynamic 
 Day Charting: Provides a clear, interactive visual graph of the selected stock's performance throughout the current trading day.
