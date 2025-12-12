@@ -4,70 +4,24 @@
 
 **URL**: https://neat-front-style.lovable.app/
 
-## How can I edit this code?
+##🚀 Project Overview
+MarketPulse is a cutting-edge stock market analysis and prediction tool designed to provide retail investors with clear, actionable insights tailored to their specific risk tolerance. We move beyond simple "buy/sell" signals by combining dynamic, real-time data visualization with a sophisticated Large Language Model (LLM) to deliver personalized recommendations.
 
-There are several ways of editing your application.
+##✨ Features
 
-**Use Lovable**
+Custom Stock Selection: Users can input any standard stock ticker (e.g., GOOGL, TSLA, MSFT) to instantly pull relevant market data.Dynamic 
+Day Charting: Provides a clear, interactive visual graph of the selected stock's performance throughout the current trading day.
+AI-Powered Predictive Analysis: Our core feature uses the Google Gemini API to analyze the current market data, recent news sentiment, and historical trends.
+Risk Profile Integration: The user specifies their risk appetite (e.g., Low, Medium, High), and the AI adjusts its recommendation accordingly, providing nuanced justification.
+Actionable Recommendation: Generates a concise verdict: Buy, Sell, or Hold, along with a plain-language explanation of the reasoning.🧠 How the AI WorksThe core prediction logic is handled by a fine-tuned prompt engineering strategy utilizing the Gemini 2.5 Flash model (for speed and cost-efficiency).
+Data Ingestion: Market data (price movement, volume, etc.) is fetched from a reliable financial API (e.g., Alpha Vantage, Yahoo Finance API).
+Contextual Analysis: The model receives the raw data, the user's defined risk profile, and a request for a decision.
+Risk-Adjusted Output:
+    Low-Risk Profile: The model prioritizes stability and long-term trends, recommending a Hold or Sell on marginal upward movement.
+    High-Risk Profile: The model may recommend a Buy on greater volatility, citing potential for rapid gains.
+Generation: The AI outputs the final verdict and the supporting analysis.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+##🛠️ Technology 
+StackComponentTechnologyRoleFrontendReact / Next.jsInteractive UI, User Input, and Chart Rendering (e.g., using Chart.js or D3.js)Backend/APIPython (Flask/Django)Server-side logic, data fetching, and handling API requests.AI/MLGoogle Gemini API (gemini-2.5-flash)Core analytical engine for generating predictions and rationale.Data SourceFinancial Data API (e.g., Alpha Vantage)Real-time and historical stock data.DeploymentVercel / Render / Google CloudHosting and serving the application.
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
