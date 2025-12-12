@@ -10,7 +10,7 @@ MarketPulse is a cutting-edge stock market analysis and prediction tool designed
 ## ✨ Features
 
 Custom Stock Selection: Users can input any standard stock ticker (e.g., GOOGL, TSLA, MSFT) to instantly pull relevant market data.
----
+-
 Dynamic Day Charting: Provides a clear, interactive visual graph of the selected stock's performance throughout the current trading day.
 ---
 AI-Powered Predictive Analysis: Our core feature uses the Google Gemini API to analyze the current market data, recent news sentiment, and historical trends.
