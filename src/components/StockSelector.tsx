@@ -19,11 +19,11 @@ export function StockSelector({ stocks, selectedStock, onSelect }: StockSelector
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState("");
 
-  const filteredStocks = stocks.filter(
-    (stock) =>
-      stock.symbol.toLowerCase().includes(search.toLowerCase()) ||
-      stock.name.toLowerCase().includes(search.toLowerCase())
-  );
+  const filteredStocks = stocks?.filter(
+  (stock) =>
+    stock.symbol.toLowerCase().includes(search.toLowerCase()) ||
+    stock.name.toLowerCase().includes(search.toLowerCase())
+) ?? [];
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
