@@ -8,9 +8,8 @@ import type {
   MarketImpactScore,
 } from "@/types/market";
 
-// For demo purposes, using mock data since we don't have a real backend running
-// In production, replace BASE_URL with your actual API endpoint
-const BASE_URL = "";
+// Backend API URL - update this to match your backend server
+const BASE_URL = "http://localhost:8000";
 
 // Mock data for demonstration
 const MOCK_STOCKS = [
