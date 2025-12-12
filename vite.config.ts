@@ -1,20 +1,22 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import path from "path";
-import { componentTagger } from "lovable-tagger";
+// src/config.ts or at the top of your component
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
-// https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  server: {
-    host: "::",
-    port: 8080,
-  },
-  plugins: mode === "development" 
-  ? [react(), componentTagger()] 
-  : [react()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
-}));
+// When fetching stock data:
+const fetchStockData = async (symbol: string) => {
+  try {
+    const response = await fetch(`${API_URL}/api/stocks/${symbol}`);
+    if (!response.ok) throw new Error('Failed to fetch');
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching stock data:', error);
+    return null; // Return null instead of mock data
+  }
+};
+```
+
+### **Step 4: Check your backend is returning real data**
+
+Test your backend directly in the browser:
+```
+https://marketpullse-ai-17.onrender.com/api/stocks/AAPL
