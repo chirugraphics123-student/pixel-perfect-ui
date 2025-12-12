@@ -13,10 +13,3 @@ const fetchStockData = async (symbol: string) => {
     return null; // Return null instead of mock data
   }
 };
-```
-
-### **Step 4: Check your backend is returning real data**
-
-Test your backend directly in the browser:
-```
-https://marketpullse-ai-17.onrender.com/api/stocks/AAPL
