@@ -9,7 +9,7 @@ import type {
 } from "@/types/market";
 
 // Backend API URL - update this to match your backend server
-const BASE_URL = "https://marketpullse-ai-15.onrender.com";
+const BASE_URL = "https://marketpullse-ai-17.onrender.com";
 
 // Mock data for demonstration
 const MOCK_STOCKS = [
