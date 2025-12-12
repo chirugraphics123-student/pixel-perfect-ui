@@ -34,7 +34,8 @@ Generation: The AI outputs the final verdict and the supporting analysis.
 # Frontend
 React / Next.jsInteractive UI, User Input, and Chart Rendering (e.g., using Chart.js or D3.js)
 
-# Backend/APIPython (Flask/Django)Server-side logic, data fetching, and handling API requests.
+# Backend
+APIPython (Flask/Django)Server-side logic, data fetching, and handling API requests.
 AI/MLGoogle Gemini API (gemini-2.5-flash)Core analytical engine for generating predictions and rationale.Data SourceFinancial Data API (e.g., Alpha Vantage)Real-time and historical stock data.DeploymentVercel / Render / Google CloudHosting and serving the application.
 
 
